@@ -9,28 +9,30 @@ body {
   background-color: #fff;
 }
 
-/* Header styles */
-header {
-  background-color: #ffffff;
-  padding: 20px 50px;
+.border-wrapper {
+  border: 5px solid #110f0f;
+  margin: 10px;
 }
 
-.container {
+/* Navbar */
+header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 20px 40px;
+  background-color: #fff;
 }
 
 .logo {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: bold;
   color: #000;
 }
 
 nav ul {
-  list-style: none;
   display: flex;
-  gap: 30px;
+  list-style: none;
+  gap: 25px;
 }
 
 nav ul li a {
@@ -41,55 +43,56 @@ nav ul li a {
 
 .username-btn {
   background-color: #c9f1ff;
-  padding: 8px 16px;
   border: none;
+  padding: 8px 16px;
   border-radius: 8px;
-  color: #000;
-  cursor: pointer;
   font-weight: bold;
+  cursor: pointer;
 }
 
-/* Hero section styles */
+/* Hero Section */
 .hero {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 80px 50px;
+  height: 90vh; /* Fits viewport */
+  padding: 0 40px;
 }
 
-.hero-text {
-  max-width: 50%;
+.hero-left {
+  width: 50%;
 }
 
-.hero-text h1 {
+.hero-left h1 {
   font-size: 36px;
-  color: #1a1a1a;
+  color: #000;
   line-height: 1.4;
 }
 
-.hero-text .highlight {
+.highlight {
   color: #00bfff;
 }
 
-.hero-text p {
-  margin: 20px 0;
-  font-size: 15px;
-  color: #6c757d;
+.hero-left p {
+  color: #555;
+  margin-top: 20px;
   line-height: 1.6;
+  font-size: 15px;
 }
 
 .main-btn {
   display: inline-block;
-  margin-top: 15px;
+  margin-top: 20px;
   padding: 12px 25px;
   background-color: #00bfff;
-  color: white;
+  color: #fff;
   text-decoration: none;
-  border-radius: 12px;
+  border-radius: 10px;
   font-weight: bold;
 }
 
-.hero-img img {
+/* Right Side Image */
+.hero-right img {
   width: 280px;
   height: auto;
 }
