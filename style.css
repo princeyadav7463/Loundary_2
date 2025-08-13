@@ -14,7 +14,6 @@ body {
   margin: 10px;
 }
 
-/* Navbar */
 header {
   display: flex;
   justify-content: space-between;
@@ -50,12 +49,11 @@ nav ul li a {
   cursor: pointer;
 }
 
-/* Hero Section */
 .hero {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 90vh; /* Fits viewport */
+  height: 90vh;
   padding: 0 40px;
 }
 
@@ -91,8 +89,90 @@ nav ul li a {
   font-weight: bold;
 }
 
-/* Right Side Image */
 .hero-right img {
-  width: 280px;
+  width: 680px;
   height: auto;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 20px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  nav ul li {
+    width: 100%;
+  }
+
+  nav ul li a {
+    display: block;
+    padding: 8px 0;
+  }
+
+  .username-btn {
+    padding: 6px 12px;
+    font-size: 14px;
+    width: auto;
+  }
+
+  .hero {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .hero-left {
+    width: 100%;
+  }
+
+  .hero-left h1 {
+    font-size: 28px;
+  }
+
+  .hero-left p {
+    font-size: 14px;
+  }
+
+  .main-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .hero-right {
+    margin-top: 20px;
+  }
+
+  .hero-right img {
+    width: 80%;
+    max-width: 350px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-left h1 {
+    font-size: 24px;
+  }
+
+  nav ul {
+    gap: 10px;
+  }
+
+  .main-btn {
+    font-size: 13px;
+    padding: 8px 18px;
+  }
+
+  .hero-right img {
+    width: 90%;
+    max-width: 320px;
+  }
 }
