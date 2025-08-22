@@ -9,10 +9,6 @@ body {
   background-color: #fff;
 }
 
-.border-wrapper {
-  border: 5px solid #110f0f;
-  margin: 10px;
-}
 
 header {
   display: flex;
@@ -93,7 +89,7 @@ nav ul li a:active {
 }
 
 .hero-right img {
-  width: 680px;
+  width: 500px;
   height: auto;
 }
 
