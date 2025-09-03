@@ -7,6 +7,7 @@
 
 body {
   background-color: #fff;
+  overflow-x: hidden;
 }
 
 
@@ -54,7 +55,7 @@ nav ul li a:active {
   justify-content: space-between;
   align-items: center;
   height: 90vh;
-  padding: 0 40px;
+  padding: 20px 40px;
 }
 
 .hero-left {
@@ -89,8 +90,9 @@ nav ul li a:active {
 }
 
 .hero-right img {
-  width: 500px;
+  max-width: 100%;
   height: auto;
+  display: block;
 }
 
 @media (max-width: 768px) {
